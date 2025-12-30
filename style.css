@@ -114,7 +114,7 @@ body{
     animation-name: transform;
     animation-duration: 2s;
     opacity: 0;
-    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 @keyframes transform {
     0%{
