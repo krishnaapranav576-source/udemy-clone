@@ -108,9 +108,9 @@ body{
     background-color: black;
     padding: 10px;
     color: white;
-    width: 350px;
-    top: 100px;
-    left: 90px;
+    width: 30%;
+    top: 20%;
+    left: 10%;
     animation-name: transform;
     animation-duration: 2s;
     opacity: 0;
@@ -137,7 +137,9 @@ body{
 }
 
 .course-card{
-    width: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .recomended-container{
@@ -199,4 +201,40 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 20px;
+}
+
+@media screen and (min-width:800px) {
+    .menubar{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    body{
+        font-size:10px;
+    }
+    .sale-image__card{
+    width:35%;
+   }
+   
+    
+}
+
+@media screen and (max-width:500px) {
+    .course-card{
+        flex-basis: 40%;
+    }
+   .categories{
+    display: none;
+   }
+   .navbar-s2,.navbar-s3{
+    display: none;
+   }
+    .sale-image__card{
+    width:35%;
+   }
+   
+   
+    
 }
